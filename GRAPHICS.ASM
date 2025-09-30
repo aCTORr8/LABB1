@@ -15,7 +15,6 @@ start:
     MOV AL, 1         
     MOV BH, 0         
 
-    ; CL = 100 (Це лічильник для LOOP)
     MOV CL, 100
     MOV CH, 0         
 
@@ -27,7 +26,6 @@ maljuvannja_liniji:
     LOOP maljuvannja_liniji 
 
 ex:
-    ; --- 3. Очікування та Завершення ---
     MOV AH, 00h       
     INT 16h           
 
@@ -36,5 +34,6 @@ ex:
 
     MOV AH, 04Ch     
     INT 21h
+
 
 END start
