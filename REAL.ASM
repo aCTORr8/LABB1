@@ -12,13 +12,14 @@ start:
 
     FINIT
 
-    FLD real1         ; ST(0) = 3.5
+    FLD real1         
 
-    FADD real2        ; ST(0) = ST(0) + real2 = 3.5 + 1.25 = 4.75
+    FADD real2        
 
-    FSTP real_sum     ; real_sum = 4.75. Стек FPU звільнений
+    FSTP real_sum     
 
     MOV AH, 4Ch
     INT 21h
+
 
 END start
